@@ -58,9 +58,13 @@
       <!-- navigation start -->
       <nav>
         <div class="navbar bg-base-100 shadow-sm items-center">
-          <div class="flex-1">
+          <div class="flex-1 flex-row-reverse justify-between">
             <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost lg:hidden order-2"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -78,7 +82,7 @@
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow border-2 border-black right-[50%]"
               >
                 <!-- mobile sidebar -->
                 <li><a class="text-lg">Home</a></li>
@@ -197,7 +201,7 @@
 
               <!-- Button -->
 
-              <div class="mr-0">
+              <div>
                 <a
                   class="bg-buttonColor text-lg font-semibold py-2 px-5 rounded-[32px] inline-block"
                   >Book Now<i
