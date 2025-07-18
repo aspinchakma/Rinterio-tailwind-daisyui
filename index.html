@@ -39,13 +39,14 @@
               clifford: "#da373d",
               buttonColor: "rgb(171, 239, 95)",
               arrowBackground: "rgb(28, 28, 28)",
+              buttonBackground: "rgba(171, 239, 95, 0.5)",
             },
             fontFamily: {
               manrope: ["Manrope", "sans-serif"],
             },
             width: {
               laptopWidth: "81%",
-              mobileWidth: "95%",
+              mobileWidth: "90%",
             },
           },
         },
@@ -213,6 +214,29 @@
           </div>
         </div>
       </nav>
+
+      <!-- Banner section -->
+      <section class="banner">
+        <img class="mx-auto" src="assets/banner.png" alt="" />
+        <div class="banner_content text-center space-y-5">
+          <h1 class="text-3xl lg:text-[68px] lg:leading-[87px] font-extrabold">
+            A barn house of this design has a striking appearance
+          </h1>
+          <p class="text-gray-500 text-base max-w-[972px] mx-auto">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <a
+            href=""
+            class="text-xl w-full lg:w-fit bg-buttonBackground py-3 px-6 inline-block font-bold rounded-full"
+            >View Details
+            <i
+              class="-rotate-45 fa-solid fa-arrow-right p-[10px] ml-2 bg-buttonColor rounded-full inline-block"
+            ></i
+          ></a>
+        </div>
+      </section>
     </header>
   </body>
 </html>
