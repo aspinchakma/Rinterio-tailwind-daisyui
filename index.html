@@ -37,14 +37,178 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              buttonColor: "rgb(171, 239, 95)",
+              arrowBackground: "rgb(28, 28, 28)",
             },
             fontFamily: {
               manrope: ["Manrope", "sans-serif"],
+            },
+            width: {
+              laptopWidth: "81%",
+              mobileWidth: "95%",
             },
           },
         },
       };
     </script>
   </head>
-  <body class="font-manrope"></body>
+  <body class="font-manrope">
+    <!-- header -->
+    <header class="w-mobileWidth lg:w-laptopWidth border-2 mx-auto">
+      <!-- navigation start -->
+      <nav>
+        <div class="navbar bg-base-100 shadow-sm items-center">
+          <div class="flex-1">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                <!-- mobile sidebar -->
+                <li><a class="text-lg">Home</a></li>
+                <li><a class="text-lg">Services</a></li>
+                <li><a class="text-lg">portfolio</a></li>
+                <li><a class="text-lg">Blogs</a></li>
+                <li><a class="text-lg">Contact Us</a></li>
+                <label class="input flex items-center my-2 w-full py-0 text-lg">
+                  <svg
+                    class="h-[18px] opacity-50 mr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                      stroke-width="2.5"
+                      fill="none"
+                      stroke="currentColor"
+                    >
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <path d="m21 21-4.3-4.3"></path>
+                    </g>
+                  </svg>
+                  <input type="search" required placeholder="Search" />
+                </label>
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="text-gray-400 btn-circle flex items-center justify-center"
+                >
+                  <div class="indicator">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- mobile button -->
+                <div class="mt-2">
+                  <a
+                    class="bg-buttonColor text-lg font-semibold py-2 px-5 rounded-[32px] inline-block"
+                    >Book Now<i
+                      class="-rotate-45 fa-solid fa-arrow-right bg-arrowBackground p-[10px] text-white rounded-full ml-2"
+                    ></i
+                  ></a>
+                </div>
+              </ul>
+            </div>
+            <a class="text-3xl font-extrabold text-gray-700"
+              ><i
+                class="-rotate-45 fa-solid fa-arrow-right bg-buttonColor p-[10px] rounded-full mr-2"
+              ></i
+              >Rinterio</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex items-center">
+            <ul class="menu menu-horizontal px-1 items-center">
+              <li><a class="text-lg">Home</a></li>
+              <li><a class="text-lg">Services</a></li>
+              <li><a class="text-lg">portfolio</a></li>
+              <li><a class="text-lg">Blogs</a></li>
+              <li><a class="text-lg">Contact Us</a></li>
+              <label class="input flex items-center mr-3 text-lg">
+                <svg
+                  class="h-[20px] opacity-50 mr-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                  </g>
+                </svg>
+                <input type="search" required placeholder="Search" />
+              </label>
+              <div
+                tabindex="0"
+                role="button"
+                class="text-gray-400 btn-circle flex items-center justify-center"
+              >
+                <div class="indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Button -->
+
+              <div class="mr-0">
+                <a
+                  class="bg-buttonColor text-lg font-semibold py-2 px-5 rounded-[32px] inline-block"
+                  >Book Now<i
+                    class="-rotate-45 fa-solid fa-arrow-right bg-arrowBackground p-[10px] text-white rounded-full ml-2"
+                  ></i
+                ></a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
